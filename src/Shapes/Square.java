@@ -21,6 +21,16 @@ public class Square extends Rectangle {
     }
 
     @Override
+    public void setWidth(double side) {
+        super.setWidth(side);
+    }
+
+    @Override
+    public void setLength(double side) {
+        super.setLength(side);
+    }
+
+    @Override
     public String toString() {
         return "Square[color = " + super.getColor() + ", filled = " + super.isFilled() + "side = " +
                 super.getWidth() + "]";
