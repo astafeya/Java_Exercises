@@ -1,8 +1,8 @@
-package AbstractShape;
+package shapes;
 
-public abstract class Shape {
-    protected String color;
-    protected boolean filled;
+public class Shape {
+    private String color = "red";
+    private boolean filled = true;
 
     public Shape() {}
 
@@ -50,8 +50,4 @@ public abstract class Shape {
         code = 31 * code + color.hashCode();
         return code;
     }
-
-    public abstract double getArea();
-
-    public abstract double getPerimeter();
 }

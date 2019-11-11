@@ -1,4 +1,6 @@
-package Points;
+package points;
+
+import java.util.Objects;
 
 public class Point3D extends Point2D {
     private float z = 0.0f;
@@ -53,7 +55,7 @@ public class Point3D extends Point2D {
     public int hashCode() {
         int code = 17;
         code = 31 * code + super.hashCode();
-        code = 31 * code + (int)z;
+        code = 31 * code + Objects.hashCode(z);
         return code;
     }
 }

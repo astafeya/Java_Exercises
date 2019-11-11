@@ -1,4 +1,6 @@
-package Shapes;
+package abstractshape;
+
+import java.util.Objects;
 
 public class Square extends Rectangle {
     public Square() {}
@@ -53,6 +55,6 @@ public class Square extends Rectangle {
 
     @Override
     public int hashCode() {
-        return super.hashCode() * 31 + (int) getSide();
+        return super.hashCode() * 31 + Objects.hashCode(getSide());
     }
 }

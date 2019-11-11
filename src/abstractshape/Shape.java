@@ -1,8 +1,10 @@
-package Shapes;
+package abstractshape;
 
-public class Shape {
-    private String color = "red";
-    private boolean filled = true;
+import java.util.Objects;
+
+public abstract class Shape {
+    protected String color;
+    protected boolean filled;
 
     public Shape() {}
 
@@ -48,6 +50,11 @@ public class Shape {
     public int hashCode() {
         int code = 17;
         code = 31 * code + color.hashCode();
+        code = 31 * code + Objects.hashCode(filled);
         return code;
     }
+
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
 }

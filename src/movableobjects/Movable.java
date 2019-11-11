@@ -1,4 +1,4 @@
-package MovableObjects;
+package movableobjects;
 
 public interface Movable {
     void moveUp();

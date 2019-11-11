@@ -1,4 +1,6 @@
-package ResizableObjects;
+package resizableobjects;
+
+import java.util.Objects;
 
 public class Circle implements GeometricObject {
     protected double radius = 1.0;
@@ -41,7 +43,7 @@ public class Circle implements GeometricObject {
     @Override
     public int hashCode() {
         int code = 17;
-        code = 31 * code + (int) radius;
+        code = 31 * code + Objects.hashCode(radius);
         return code;
     }
 }

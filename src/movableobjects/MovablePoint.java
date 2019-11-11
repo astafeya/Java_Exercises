@@ -1,4 +1,4 @@
-package MovableObjects;
+package movableobjects;
 
 public class MovablePoint implements Movable {
     int x;

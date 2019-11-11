@@ -1,4 +1,4 @@
-package MovableObjects;
+package movableobjects;
 
 public class MovableCircle implements Movable {
     private int radius;

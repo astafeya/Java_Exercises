@@ -1,4 +1,6 @@
-package Shapes;
+package shapes;
+
+import java.util.Objects;
 
 public class Rectangle extends Shape {
     private double width = 1.0;
@@ -66,8 +68,8 @@ public class Rectangle extends Shape {
     public int hashCode() {
         int code = 17;
         code = 31 * code + super.hashCode();
-        code = 31 * code + (int) width;
-        code = 31 * code + (int) length;
+        code = 31 * code + Objects.hashCode(width);
+        code = 31 * code + Objects.hashCode(length);
         return code;
     }
 }

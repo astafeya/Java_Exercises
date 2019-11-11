@@ -1,4 +1,6 @@
-package Points;
+package points;
+
+import java.util.Objects;
 
 public class MovablePoint extends Point2D {
     private float xSpeed = 0.0f;
@@ -74,8 +76,8 @@ public class MovablePoint extends Point2D {
     public int hashCode() {
         int code = 17;
         code = 31 * code + super.hashCode();
-        code = 31 * code + (int) xSpeed;
-        code = 31 * code + (int) ySpeed;
+        code = 31 * code + Objects.hashCode(xSpeed);
+        code = 31 * code + Objects.hashCode(ySpeed);
         return  code;
     }
 }

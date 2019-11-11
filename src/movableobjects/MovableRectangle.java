@@ -1,4 +1,4 @@
-package MovableObjects;
+package movableobjects;
 
 public class MovableRectangle implements Movable {
     private MovablePoint topLeft;

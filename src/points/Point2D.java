@@ -1,4 +1,6 @@
-package Points;
+package points;
+
+import java.util.Objects;
 
 public class Point2D {
     private float x = 0.0f;
@@ -60,8 +62,8 @@ public class Point2D {
     @Override
     public int hashCode() {
         int code = 17;
-        code = 31 * code + (int)x;
-        code = 31 * code + (int)y;
+        code = 31 * code + Objects.hashCode(x);
+        code = 31 * code + Objects.hashCode(y);
         return code;
     }
 }

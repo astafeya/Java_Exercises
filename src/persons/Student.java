@@ -1,4 +1,6 @@
-package Persons;
+package persons;
+
+import java.util.Objects;
 
 public class Student extends Person {
     private String program;
@@ -60,7 +62,7 @@ public class Student extends Person {
         code = 31 * code + super.hashCode();
         code = 31 * code + program.hashCode();
         code = 31 * code + year;
-        code = 31 * code + (int) fee;
+        code = 31 * code + Objects.hashCode(fee);
         return code;
     }
 }

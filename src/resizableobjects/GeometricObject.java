@@ -1,4 +1,4 @@
-package ResizableObjects;
+package resizableobjects;
 
 public interface GeometricObject {
     double getPerimeter();
